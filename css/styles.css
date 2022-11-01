@@ -123,6 +123,7 @@ img {
 }
 .header-address {
   margin-right: 10px;
+  fill: currentColor;
 }
 /*section-main*/
 
