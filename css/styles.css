@@ -73,8 +73,8 @@ img {
 .nav-header .mail {
   margin-left: 344px;
 }
-.nav-header .item:not(:last-child) {
-  margin-right: 50px;
+.nav-header .item-nav:not(:last-child) {
+  margin-right: 30px;
 }
 .nav-header .link {
   display: block;
@@ -108,17 +108,28 @@ img {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-
+.link:hover,
+.link:focus {
+  --accent: #2196f3;
+  color: var(--accent);
+}
+.mail-nav,
+.tel-nav {
+  display: flex;
+  align-items: center;
+}
+.mail-nav {
+  margin-left: 318px;
+}
 .header-address {
   margin-right: 10px;
 }
-
 /*section-main*/
 
 .section-main {
   padding-top: 200px;
   padding-bottom: 200px;
-  background:rgba(47, 48, 58, 0.4);
+  background: rgba(47, 48, 58, 0.4);
   background-image: url(../images/bgmain.jpg);
 }
 .section-main .about-name {
@@ -296,9 +307,10 @@ img {
   padding-left: 0;
 }
 .team-picture {
-  background: #FFFFFF;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-picture:not(:last-child) {
   margin-right: 30px;
@@ -438,7 +450,7 @@ border-radius: 0px 0px 4px 4px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);;
+  background: rgba(255, 255, 255, 0.1);
   fill: #afb1b8;
 }
 .icon-social-footer:not(:last-child) {
@@ -542,9 +554,20 @@ border-radius: 0px 0px 4px 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  border-left: 1px solid #eeeeee;
+  /* border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+   */
+}
+.portfolio-link {
+  display: block;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
 }
 .offer {
   padding: 20px 24px 20px 24px;
