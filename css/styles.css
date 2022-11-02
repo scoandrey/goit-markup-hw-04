@@ -479,13 +479,6 @@ img {
 }
 /*hero*/
 
-.hero {
-  /* display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0; */
-}
 .cap {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -544,9 +537,6 @@ img {
 .services {
   display: flex;
   flex-wrap: wrap;
-  /* margin-left: auto;
-  margin-right: auto;
-  justify-content: center; */
   padding: 0;
 }
 .services .content {
@@ -568,10 +558,6 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  /* border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-   */
 }
 .portfolio-link {
   display: block;
