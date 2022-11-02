@@ -38,6 +38,9 @@ img {
   padding-right: 15px;
 }
 .header-main {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   border-bottom: 1px solid #ececec;
 }
 .header-one {
@@ -128,10 +131,14 @@ img {
 /*section-main*/
 
 .section-main {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   background: rgba(47, 48, 58, 0.4);
   background-image: url(../images/bgmain.jpg);
+  background-color: #c4c4c4;
 }
 .section-main .about-name {
   width: 696px;
@@ -274,6 +281,9 @@ img {
 /*section-team*/
 
 .section-team {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 94px;
   padding-bottom: 94px;
   background: #f5f4fa;
@@ -384,6 +394,9 @@ img {
 /*footer*/
 
 .footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
