@@ -73,6 +73,9 @@ img {
   display: flex;
   padding: 0;
 }
+.mail-tel {
+  margin-left: 318px;
+}
 .nav-header .mail {
   margin-left: 344px;
 }
@@ -80,9 +83,6 @@ img {
   margin-right: 30px;
 }
 .nav-header .link {
-  display: block;
-  padding-bottom: 32px;
-  padding-top: 32px;
 }
 .nav-studio {
   font-weight: 500;
@@ -98,14 +98,17 @@ img {
   letter-spacing: 0.02em;
 }
 .mail-header {
-  margin-left: 318px;
-  display: flex;
-  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+}
+.mailtel {
+  display: flex;
+  align-items: center;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 .tel-header {
   font-weight: 500;
@@ -133,10 +136,10 @@ img {
   padding-bottom: 200px;
   background-color: #c4c4c4;
   background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  );
-  background-image: url(../images/bgmain.jpg);
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bgmain.jpg);
 }
 .section-main .about-name {
   width: 696px;
@@ -159,6 +162,7 @@ img {
   border: 0;
   width: 216px;
   height: 50px;
+  border-radius: 4px;
 }
 .btn {
   font-family: "Roboto", sans-serif;
@@ -470,11 +474,13 @@ img {
 .icon-social-footer:not(:last-child) {
   margin-right: 10px;
 }
-.social-link-footer:hover {
+.social-link-footer:hover,
+.social-link-footer:focus {
   background-color: #2196f3;
   fill: #ffffff;
 }
-.social-link-footer:hover .social-icon {
+.social-link-footer:hover .social-icon,
+.social-link-footer:focus .social-icon {
   fill: #ffffff;
 }
 /*hero*/
@@ -566,7 +572,6 @@ img {
 .portfolio-link:hover,
 .portfolio-link:focus {
   fill: currentColor;
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
