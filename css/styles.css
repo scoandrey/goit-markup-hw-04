@@ -98,6 +98,9 @@ img {
   letter-spacing: 0.02em;
 }
 .mail-header {
+  margin-left: 318px;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -116,14 +119,6 @@ img {
   --accent: #2196f3;
   color: var(--accent);
 }
-.mail-nav,
-.tel-nav {
-  display: flex;
-  align-items: center;
-}
-.mail-nav {
-  margin-left: 318px;
-}
 .header-address {
   margin-right: 10px;
   fill: currentColor;
@@ -136,11 +131,12 @@ img {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: rgba(47, 48, 58, 0.4);
-  background-image: url(../images/bgmain.jpg);
   background-color: #c4c4c4;
-  border: 1px solid #000000;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+  background-image: url(../images/bgmain.jpg);
 }
 .section-main .about-name {
   width: 696px;
@@ -331,7 +327,6 @@ img {
 .name {
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 .name-prof {
   text-align: center;
@@ -342,6 +337,10 @@ img {
 }
 .icons-social {
   display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 16px;
+  margin-bottom: 30px;
 }
 .social-link {
   display: flex;
@@ -356,11 +355,13 @@ img {
 .icon-social:not(:last-child) {
   margin-right: 10px;
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: #2196f3;
   fill: #ffffff;
 }
-.social-link:hover .social-icon {
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
   fill: #ffffff;
 }
 
@@ -372,10 +373,9 @@ img {
 }
 .companys-item {
   display: flex;
+  padding: 0;
 }
 .companys {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 .companys-link {
   display: flex;
@@ -385,12 +385,16 @@ img {
   height: 92px;
   background: #ffffff;
   fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 .companys:not(:last-child) {
   margin-right: 30px;
 }
-.companys-link:hover {
+.companys-link:hover,
+.companys-link:focus {
   fill: #2196f3;
+  border: 1px solid #2196f3;
 }
 
 /*footer*/
@@ -440,15 +444,9 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 .connection {
-  display: flex;
-  flex-direction: column;
-
-  width: 206px;
-  height: 80px;
   margin-left: 70px;
 }
 .connect {
-  display: block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -467,7 +465,7 @@ img {
   height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  fill: #afb1b8;
+  fill: #ffffff;
 }
 .icon-social-footer:not(:last-child) {
   margin-right: 10px;
@@ -564,13 +562,13 @@ img {
 .portfolio-link {
   display: block;
   background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
   fill: currentColor;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .offer {
   padding: 20px 24px 20px 24px;
